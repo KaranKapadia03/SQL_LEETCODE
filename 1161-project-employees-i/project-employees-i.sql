@@ -4,5 +4,5 @@ on p.employee_id=e.employee_id
 group by p.project_id
 )
 
-select project_id ,cast((sums * 1.0/emp) as decimal(5,2)) as average_years from data_new
+select project_id ,cast((sums *1.00 /emp) as decimal(5,2)) as average_years from data_new
 order by project_id
